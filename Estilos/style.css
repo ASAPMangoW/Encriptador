@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --fuente-inter: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bloque__header{
+    padding: 2% 0 0 5%;
+}
+
+body{
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+}
+
+.bloque__global{
+    display: flex;
+    align-items: center;
+    padding:0 5% 5% 10%;
+    gap: 5%;
+}
+
+.bloque__principal{
+    width: 200vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+}
+
+.bloque__texto{
+    width: 60%;
+    height: 100%;
+    border:none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    text-align: start;
+}
+
+.bloque__texto:focus,
+.bloque__texto:active{
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    color: #0A3871;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+}
+
+.bloque__resultados{
+    width: 75vw;
+    height: 115vh;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.texto__resultado{
+    width: 80%;
+    border:none;
+    background-color: #Ffff;
+    color: #0A3871;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    text-align: start;
+}
+
+.bloque__resultados img{
+    width: 90%;
+}
+
+.mensaje__encriptado{
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.texto__ningun{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--fuente-inter);
+    color: #343A40;
+    text-align: center;
+}
+
+.texto__ingresa{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    color: #495057;
+    text-align: center;
+}
+
+.texto__advertencia{
+    font-family: var(--fuente-inter);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #495057;
+}
+
+.bloque__botones{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.bloque__boton1{
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+.bloque__boton2{
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+}
+
+.bloque__boton1:hover,
+.bloque__boton2:hover{
+    margin: 0.5%;
+    width:95%;
+    padding: 2%;
+
+}
+
+.pie__pagina{
+    background-color: #F3F5FC;
+    padding: 24px;
+    color: #0A3871;
+    text-align: center;
+    font-family: var(--fuente-inter);
+}
+
+@media (max-width: 1024px){
+    
+    .bloque__principal{
+        width: 100%;
+    }
+
+    .bloque__resultados{
+        width: 80%;
+        height: 600px;
+    }
+
+    .bloque__global{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .bloque__boton1:hover,.bloque__boton2:hover{
+        margin: 0.5%;
+        width:95%;
+        padding: 2%; 
+    }
+}
+
+@media (max-width: 430px){
+    .bloque__principal{
+        width: 100%;
+    }
+    .bloque__resultados{
+        width: 100%;
+        height: 400px;
+    }
+    .bloque__global{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .bloque__botones{
+        flex-direction: column;
+    }
+    .bloque__boton1:hover,.bloque__boton2:hover{
+        margin: 0.5%;
+        width:95%;
+        padding: 2%; 
+    }
+}
+

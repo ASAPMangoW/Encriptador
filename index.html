@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./Estilos/style.css">
+</head>
+<body>
+    <header class="bloque__header">
+        <img class="logo__alura" src="./Imagenes/Logo Alura.png" alt="Logo Alura">
+    </header>
+    <main class="bloque__global">
+        <div class="bloque__principal">
+            <textarea name="texto" id="texto" class="bloque__texto" placeholder="Ingresa el texto aquí"></textarea>
+            <p class="texto__advertencia">ADVERTENCIA: El encriptador solo funciona con letras minúsculas y sin acentos.</p>
+            <div class="bloque__botones"> 
+                <button onclick="encriptar();" class="bloque__boton1">Encriptar</button>
+                <button onclick="desencriptar();" class="bloque__boton2">Desencriptar</button>
+            </div>
+        </div>
+        <div class="bloque__resultados">
+            <textarea name="textoResultado" id="textoResultado" class="texto__resultado" disabled></textarea>
+            <img class="foto__gato" src="./Imagenes/Foto Gato.jpg" alt="Foto gato incrédulo" id="gato">
+            <div class="mensaje__encriptado" id="mensaje__encriptado">
+                <p class="texto__ningun" id="ningun">Ningún mensaje fue encontrado</p>
+                <p class="texto__ingresa" id="ingresa">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+    </main>
+    <footer class="pie__pagina">
+        <p>Desarrolado por Santiago Martínez</p>
+    </footer>
+
+    
+    </body>
+    <script src="app.js"></script>
+</html>
